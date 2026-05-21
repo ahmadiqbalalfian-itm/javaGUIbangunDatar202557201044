@@ -84,7 +84,7 @@
           <Font name="Segoe UI" size="18" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Segi Tiga"/>
+        <Property name="text" type="java.lang.String" value="Persegi Panjang"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnKembali">
@@ -115,8 +115,8 @@
                   </Group>
                   <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="tAlas" max="32767" attributes="0"/>
-                      <Component id="tTinggi" pref="202" max="32767" attributes="0"/>
+                      <Component id="tPanjang" max="32767" attributes="0"/>
+                      <Component id="tLebar" pref="202" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -128,12 +128,12 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tAlas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tPanjang" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tLebar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="32" max="32767" attributes="0"/>
               </Group>
@@ -143,20 +143,20 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Alas"/>
+            <Property name="text" type="java.lang.String" value="Panjang"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tinggi"/>
+            <Property name="text" type="java.lang.String" value="Lebar"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="tAlas">
+        <Component class="javax.swing.JTextField" name="tPanjang">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tAlasActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tPanjangActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="tTinggi">
+        <Component class="javax.swing.JTextField" name="tLebar">
         </Component>
       </SubComponents>
     </Container>
