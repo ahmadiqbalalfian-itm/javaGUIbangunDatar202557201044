@@ -181,7 +181,7 @@ public class framePersegi extends javax.swing.JFrame {
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         // TODO add your handling code here:
-        double sisi = Double.parseDouble(tSisi.getText());
+        double sisi = Double.parseDouble(tSisi.getText());//salah nama commit, harusnya persegi
         //mengambil teks pakai getText
         double luas = Math.pow(sisi, 2);
         tLuas.setText(String.valueOf(luas));
