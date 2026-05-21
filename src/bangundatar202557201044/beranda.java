@@ -61,6 +61,11 @@ public class beranda extends javax.swing.JFrame {
         });
 
         btnLingkaran.setText("Lingkaran");
+        btnLingkaran.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLingkaranActionPerformed(evt);
+            }
+        });
 
         btnSegitiga.setText("Segi Tiga");
         btnSegitiga.addActionListener(new java.awt.event.ActionListener() {
@@ -94,8 +99,18 @@ public class beranda extends javax.swing.JFrame {
         );
 
         btnJajarGenjang.setText("Jajar Genjang");
+        btnJajarGenjang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJajarGenjangActionPerformed(evt);
+            }
+        });
 
         btnTrapesium.setText("Trapesium");
+        btnTrapesium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTrapesiumActionPerformed(evt);
+            }
+        });
 
         btnPersegi.setText("Persegi");
         btnPersegi.addActionListener(new java.awt.event.ActionListener() {
@@ -154,9 +169,9 @@ public class beranda extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
                 .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(btnExit)
                 .addContainerGap())
@@ -184,6 +199,8 @@ public class beranda extends javax.swing.JFrame {
 
     private void btnPersegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersegiActionPerformed
         // TODO add your handling code here:
+        new framePersegi().setVisible(true);//membuka frame
+        dispose();
     }//GEN-LAST:event_btnPersegiActionPerformed
 
     private void btnPersegiPanjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersegiPanjangActionPerformed
@@ -191,6 +208,24 @@ public class beranda extends javax.swing.JFrame {
         new framePersegiPanjang().setVisible(true);//membuka frame
         dispose();
     }//GEN-LAST:event_btnPersegiPanjangActionPerformed
+
+    private void btnLingkaranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLingkaranActionPerformed
+        // TODO add your handling code here:
+        new frameLingkaran().setVisible(true);//membuka frame
+        dispose();
+    }//GEN-LAST:event_btnLingkaranActionPerformed
+
+    private void btnJajarGenjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJajarGenjangActionPerformed
+        // TODO add your handling code here:
+        new frameJajarGenjang().setVisible(true);//membuka frame
+        dispose();
+    }//GEN-LAST:event_btnJajarGenjangActionPerformed
+
+    private void btnTrapesiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTrapesiumActionPerformed
+        // TODO add your handling code here:
+        new frameTrapesium().setVisible(true);//membuka frame
+        dispose();
+    }//GEN-LAST:event_btnTrapesiumActionPerformed
 
     /**
      * @param args the command line arguments
