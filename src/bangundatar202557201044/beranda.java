@@ -33,14 +33,14 @@ public class beranda extends javax.swing.JFrame {
         btnLingkaran = new javax.swing.JButton();
         btnSegitiga = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        btnPersegiPanjang1 = new javax.swing.JButton();
-        btnLingkaran1 = new javax.swing.JButton();
-        btnSegitiga1 = new javax.swing.JButton();
+        btnJajarGenjang = new javax.swing.JButton();
+        btnTrapesium = new javax.swing.JButton();
+        btnPersegi = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("beranda");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("APLIKASI BANGUN DATAR");
 
@@ -52,6 +52,11 @@ public class beranda extends javax.swing.JFrame {
         });
 
         btnPersegiPanjang.setText("Persegi Panjang");
+        btnPersegiPanjang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPersegiPanjangActionPerformed(evt);
+            }
+        });
 
         btnLingkaran.setText("Lingkaran");
 
@@ -86,14 +91,14 @@ public class beranda extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnPersegiPanjang1.setText("Persegi Panjang");
+        btnJajarGenjang.setText("Jajar Genjang");
 
-        btnLingkaran1.setText("Lingkaran");
+        btnTrapesium.setText("Trapesium");
 
-        btnSegitiga1.setText("Segi Tiga");
-        btnSegitiga1.addActionListener(new java.awt.event.ActionListener() {
+        btnPersegi.setText("Persegi");
+        btnPersegi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSegitiga1ActionPerformed(evt);
+                btnPersegiActionPerformed(evt);
             }
         });
 
@@ -104,20 +109,20 @@ public class beranda extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btnPersegiPanjang1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnLingkaran1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSegitiga1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnJajarGenjang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnTrapesium, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPersegi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSegitiga1)
+                .addComponent(btnPersegi)
                 .addGap(18, 18, 18)
-                .addComponent(btnPersegiPanjang1)
+                .addComponent(btnJajarGenjang)
                 .addGap(18, 18, 18)
-                .addComponent(btnLingkaran1)
+                .addComponent(btnTrapesium)
                 .addContainerGap())
         );
 
@@ -126,34 +131,33 @@ public class beranda extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnExit))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(38, 38, 38))
+                        .addGap(44, 44, 44)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnExit))
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(25, 25, 25)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addComponent(jLabel1)
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
                 .addComponent(btnExit)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -176,9 +180,14 @@ public class beranda extends javax.swing.JFrame {
         //setVisible(false);
     }//GEN-LAST:event_btnExitActionPerformed
 
-    private void btnSegitiga1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSegitiga1ActionPerformed
+    private void btnPersegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersegiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSegitiga1ActionPerformed
+    }//GEN-LAST:event_btnPersegiActionPerformed
+
+    private void btnPersegiPanjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersegiPanjangActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btnPersegiPanjangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -217,12 +226,12 @@ public class beranda extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnJajarGenjang;
     private javax.swing.JButton btnLingkaran;
-    private javax.swing.JButton btnLingkaran1;
+    private javax.swing.JButton btnPersegi;
     private javax.swing.JButton btnPersegiPanjang;
-    private javax.swing.JButton btnPersegiPanjang1;
     private javax.swing.JButton btnSegitiga;
-    private javax.swing.JButton btnSegitiga1;
+    private javax.swing.JButton btnTrapesium;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
