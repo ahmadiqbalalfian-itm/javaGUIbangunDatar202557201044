@@ -197,10 +197,10 @@ public class framePersegiPanjang extends javax.swing.JFrame {
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         // TODO add your handling code here:
-        double alas = Double.parseDouble(tPanjang.getText());
-        double tinggi = Double.parseDouble(tLebar.getText());
+        double panjang = Double.parseDouble(tPanjang.getText());
+        double lebar = Double.parseDouble(tLebar.getText());
         //mengambil teks pakai getText
-        double luas = 0.5*alas*tinggi;
+        double luas = panjang*lebar;
         tLuas.setText(String.valueOf(luas));
         //menampilkan teks pakai setText
     }//GEN-LAST:event_btnHitungActionPerformed
