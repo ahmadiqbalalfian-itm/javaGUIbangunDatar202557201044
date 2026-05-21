@@ -20,7 +20,6 @@ public class frameLingkaran extends javax.swing.JFrame {
     
     void reset(){
         tJari.setText(null);
-        tTinggi.setText(null);
         tLuas.setText(null);
     }
     /**
@@ -183,10 +182,9 @@ public class frameLingkaran extends javax.swing.JFrame {
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         // TODO add your handling code here:
-        double alas = Double.parseDouble(tJari.getText());
-        double tinggi = Double.parseDouble(tTinggi.getText());
+        double jari = Double.parseDouble(tJari.getText());
         //mengambil teks pakai getText
-        double luas = 0.5*alas*tinggi;
+        double luas = Math.PI*Math.pow(jari, 2);
         tLuas.setText(String.valueOf(luas));
         //menampilkan teks pakai setText
     }//GEN-LAST:event_btnHitungActionPerformed
