@@ -205,10 +205,11 @@ public class frameTrapesium extends javax.swing.JFrame {
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         // TODO add your handling code here:
-        double alas = Double.parseDouble(tSejajar1.getText());
-        double tinggi = Double.parseDouble(tSejajar2.getText());
+        double sejajar1 = Double.parseDouble(tSejajar1.getText());
+        double sejajar2 = Double.parseDouble(tSejajar2.getText());
+        double tinggi = Double.parseDouble(tTinggi.getText());
         //mengambil teks pakai getText
-        double luas = 0.5*alas*tinggi;
+        double luas = 0.5*(sejajar1+sejajar2)*tinggi;
         tLuas.setText(String.valueOf(luas));
         //menampilkan teks pakai setText
     }//GEN-LAST:event_btnHitungActionPerformed
