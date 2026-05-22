@@ -173,7 +173,7 @@ public class frameLingkaran extends javax.swing.JFrame {
 
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
-        setVisible(false);//sama dengan dispose (menyembunyikan frame)
+        dispose(); //nah ini lebih cocok pakai dispose karena akan menutup, dan tidak berjalan di background
         new beranda().setVisible(true);
     }//GEN-LAST:event_btnKembaliActionPerformed
 
