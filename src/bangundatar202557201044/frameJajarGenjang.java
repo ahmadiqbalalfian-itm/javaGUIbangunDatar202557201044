@@ -200,7 +200,7 @@ public class frameJajarGenjang extends javax.swing.JFrame {
         double alas = Double.parseDouble(tAlas.getText());
         double tinggi = Double.parseDouble(tTinggi.getText());
         //mengambil teks pakai getText
-        double luas = 0.5*alas*tinggi;
+        double luas = alas*tinggi;
         tLuas.setText(String.valueOf(luas));
         //menampilkan teks pakai setText
     }//GEN-LAST:event_btnHitungActionPerformed
