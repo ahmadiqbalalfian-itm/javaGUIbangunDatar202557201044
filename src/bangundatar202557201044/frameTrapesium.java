@@ -21,6 +21,7 @@ public class frameTrapesium extends javax.swing.JFrame {
     void reset(){
         tSejajar1.setText(null);
         tSejajar2.setText(null);
+        tTinggi.setText(null);
         tLuas.setText(null);
     }
     /**
