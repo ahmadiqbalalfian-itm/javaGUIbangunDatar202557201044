@@ -183,7 +183,7 @@ public class beranda extends javax.swing.JFrame {
     private void btnSegitigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSegitigaActionPerformed
         // TODO add your handling code here:
         new frameSegiTiga().setVisible(true);//membuka frame
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_btnSegitigaActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
@@ -192,38 +192,38 @@ public class beranda extends javax.swing.JFrame {
         System.exit(0);//aplikasinya ditutup, dihentikan:
         
         //hanya akan menyembunyikan:
-        //dispose();
-        //setVisible(false);
+        //dispose(); akan menutup frame
+        //setVisible(false); hanya menyembunyikan, frame tetap jalan di background
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnPersegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersegiActionPerformed
         // TODO add your handling code here:
         new framePersegi().setVisible(true);//membuka frame
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_btnPersegiActionPerformed
 
     private void btnPersegiPanjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPersegiPanjangActionPerformed
         // TODO add your handling code here:
         new framePersegiPanjang().setVisible(true);//membuka frame
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_btnPersegiPanjangActionPerformed
 
     private void btnLingkaranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLingkaranActionPerformed
         // TODO add your handling code here:
         new frameLingkaran().setVisible(true);//membuka frame
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_btnLingkaranActionPerformed
 
     private void btnJajarGenjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJajarGenjangActionPerformed
         // TODO add your handling code here:
         new frameJajarGenjang().setVisible(true);//membuka frame
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_btnJajarGenjangActionPerformed
 
     private void btnTrapesiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTrapesiumActionPerformed
         // TODO add your handling code here:
         new frameTrapesium().setVisible(true);//membuka frame
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_btnTrapesiumActionPerformed
 
     /**
